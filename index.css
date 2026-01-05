@@ -7,11 +7,12 @@
 }
 .encabezado{
     background-color: lightblue;
-    padding:4rem;
+    padding:5rem;
     text-align: center;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-image: url(imagenes/Portada_del_juego.webp);
     background-size: cover;
 }
 .encabezad1{
@@ -24,9 +25,46 @@
 
 .encabezad1 h1{
    text-decoration: underline;
-   text-shadow: 2px 2px 3x #ece4e4;
+   text-shadow: 2px 2px 9px #ece4e4;
 }
 .encabezad1:hover{
     color: darkblue;
     cursor: pointer;
+}
+nav a{
+    margin: 0 6rem;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+
+/*Parte final con copyright y iconos para todas las páginas*/
+.footer {
+  background-color: #111;
+  padding: 20px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end; /* TODO a la derecha */
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ff88;
+  transform: scale(1.2);
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 14px;
 }
