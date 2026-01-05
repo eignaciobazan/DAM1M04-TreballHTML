@@ -80,6 +80,33 @@ nav a{
     scale: calc(1.2);
 }
 
+.aventura{
+  text-align: center;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  animation: revealAnim 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+@keyframes revealAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.paso {
+  background: #262525;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 12px;
+}
+
+
 .vectorial {
   text-align: center;
 }
